@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <style>
+         body {background-color: whitesmoke;}
+        
+        {
+	font-family: sans-serif;
+}
+.block{
+	margin: 50px;
+	width: 400px;
+}
+.block span{
+    display: block;    
+}
+h1, h2{
+	background:orange;
+	display: inline;
+	padding:10px;
+	line-height: 2em;
+}
+
+    </style>
+    
+    <h1> meeeuw_u {{total}} </h1>
+
+<a href = "{% url 'home' %}"> 다시하기 </a>
+<br>
+<h2> 만들 거에요.</h2>
+{{ fulltext }}
+
+<h2> meeeuw_u </h2>
+{% for word, countTotal in dictionary %}
+{{ word }} - {{ countTotal }}
+<br>
+{% endfor %}
+
+</body>
+</html>
